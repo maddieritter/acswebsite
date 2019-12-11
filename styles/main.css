@@ -342,182 +342,35 @@ template {
   display: none;
 }
 
-/* best if viewed in iphoneX layout for now */
-.body {
-  height: 100%;
+.jumbotron-fluid {
+  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(/assets/images/AdobeStock_100635381.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(/assets/images/AdobeStock_100635381.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 
-.grid-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-  -ms-grid-rows: 55px  auto auto auto;
-      grid-template-rows: 55px  auto auto auto;
-  grid-gap: 4px;
-  margin-bottom: 5%;
-  min-height: 0;
-  min-width: 0;
-  font-family: 'Oswald', sans-serif;
-  line-height: 25px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+#about {
+  border-radius: 0;
+  padding: 8rem 0;
 }
 
-.grid-container .nav {
-  padding: 8px;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / span 3;
-}
-
-.grid-container .nav .container {
-  display: inline-block;
-  cursor: pointer;
-}
-
-.grid-container .nav .container .bar1, .grid-container .nav .container .bar2, .grid-container .nav .container .bar3 {
-  width: 35px;
-  height: 5px;
+#donate {
   background-color: #005b97;
-  margin: 6px 0;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  padding: 8rem 0;
 }
 
-.grid-container .nav .container .change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
+#services {
+  padding: 8rem 0;
 }
 
-.grid-container .nav .container .change .bar2 {
-  opacity: 0;
+#contact {
+  padding: 8rem 0;
 }
 
-.grid-container .nav .container .change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
-.grid-container .header {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / span 3;
-}
-
-.grid-container .header img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 20%;
-}
-
-.grid-container .hero {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / span 3;
-}
-
-.grid-container .hero img {
-  max-width: 100%;
-}
-
-.grid-container .article {
-  background-color: #f3f3f3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / span 3;
-  font-size: 18px;
-  padding: 18px;
-  color: #005b97;
-  word-spacing: 4px;
-  text-align: center;
-  min-width: 0;
-  word-wrap: break-word;
-  letter-spacing: 1px;
-  margin: 10px;
-}
-
-.grid-container .camp {
-  margin: 10px 45px 15px 45px;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / span 3;
-}
-
-.grid-container .camp img {
-  max-width: 100%;
-}
-
-.grid-container .camp img:hover {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-
-.grid-container .gallery {
-  margin: 15px 45px 15px 45px;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / span 3;
-}
-
-.grid-container .gallery img {
-  max-width: 100%;
-}
-
-.grid-container .gallery img:hover {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-
-.grid-container .donate {
-  margin: 15px 45px 15px 45px;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1 / span 3;
-}
-
-.grid-container .donate img {
-  max-width: 100%;
-}
-
-.grid-container .donate img:hover {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-}
-
-/* Still working out the kinks for now (final), but last 3 elements should form column at the bottom in wide screen */
-@media screen and (max-width: 1200px) {
-  .camp {
-    margin: 10px 45px 15px 45px;
-  }
-  .camp img {
-    max-width: 100%;
-  }
-  .camp img:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-  }
-  .gallery {
-    margin: 15px 45px 15px 45px;
-  }
-  .gallery img {
-    max-width: 100%;
-  }
-  .gallery img:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-  }
-  .donate {
-    margin: 15px 45px 15px 45px;
-  }
-  .donate img {
-    max-width: 100%;
-  }
-  .donate img:hover {
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-  }
+.btn-lg {
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=main.css.map */

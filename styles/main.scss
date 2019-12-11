@@ -1,169 +1,39 @@
-$primary_color: #005b97;
 @import "./vendor/normalize.scss";
+@import "./variables";
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
     
-/* best if viewed in iphoneX layout for now */ 
-
-  
-    .body{
-        height: 100%;
-    }
-    .grid-container{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: 55px  auto auto auto;
-        grid-gap: 4px;
-        margin-bottom: 5%;
-        min-height: 0;  
-        min-width: 0;
-        font-family: 'Oswald', sans-serif;
-        line-height: 25px;
-        justify-content: center;
 
 
-        .nav{
-          padding: 8px;
-          grid-column: 1 / span 3;
-
-              .container {
-                display: inline-block;
-                cursor: pointer;
-                
-                .bar1, .bar2, .bar3 {
-                  width: 35px;
-                  height: 5px;
-                  background-color:$primary_color;
-                  margin: 6px 0;
-                  transition: 0.4s;
-                }
-                
-                .change .bar1 {
-                  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-                  transform: rotate(-45deg) translate(-9px, 6px);
-                }
-                
-                .change .bar2 {opacity: 0;}
-                
-                .change .bar3 {
-                  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-                  transform: rotate(45deg) translate(-8px, -8px);
-                }
-              }
-              
-        }
-
-        .header{
-            grid-column: 1 / span 3;
-
-            img {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                max-width: 20%;
-            }
-        }
-      
-        .hero{
-            grid-column: 1 / span 3;
-
-            img {
-                max-width: 100%;
-           }
-        }
-
-
-        .article{
-            background-color: rgb(243, 243, 243);
-            grid-column: 1 / span 3;
-            font-size: 18px;
-            padding: 18px;
-            color: $primary_color;
-            word-spacing: 4px;
-            text-align: center;
-            min-width: 0;
-            word-wrap: break-word;
-            letter-spacing: 1px;
-            margin: 10px;
-        }     
-        
-        .camp{
-            margin:10px 45px 15px 45px;
-            grid-column: 1 / span 3;
-
-            img {
-            max-width: 100%;
-
-             }
-             img:hover {
-                opacity: 0.5;
-                filter: alpha(opacity=50); 
-            }
-         
-        }
-        
-        .gallery{
-            margin:15px 45px 15px 45px;
-            grid-column: 1 / span 3;
-
-            img {
-            max-width: 100%;
-            }
-            img:hover {
-                opacity: 0.5;
-                filter: alpha(opacity=50);              }
-        }
-        
-        .donate{
-            margin:15px 45px 15px 45px;
-            grid-column: 1 / span 3;
-
-            img {
-            max-width: 100%;
-            }
-            img:hover {
-                opacity: 0.5;
-                filter: alpha(opacity=50);               }
-        }
+    .jumbotron-fluid{
+        color: white;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)), url(/assets/images/AdobeStock_100635381.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
     }
 
-    /* Still working out the kinks for now (final), but last 3 elements should form column at the bottom in wide screen */ 
-    @media screen and (max-width: 1200px) {
-        .camp{
-            margin:10px 45px 15px 45px;
+    #about{
+        border-radius: 0;
+        padding: 8rem 0;
+    }
 
-            img {
-            max-width: 100%;
+    #donate{
+        background-color: $primary;
+        padding: 8rem 0;
+    }
+    
+    #services{
+        padding: 8rem 0;
+    }
 
-             }
-             img:hover {
-                opacity: 0.5;
-                filter: alpha(opacity=50); 
-            }
-         
-        }
-        
-        .gallery{
-            margin:15px 45px 15px 45px;
-
-            img {
-            max-width: 100%;
-            }
-            img:hover {
-                opacity: 0.5;
-                filter: alpha(opacity=50);               }
-        }
-        
-        .donate{
-            margin:15px 45px 15px 45px;
-
-            img {
-            max-width: 100%;
-            }
-            img:hover {
-                opacity: 0.5;
-                filter: alpha(opacity=50);              }
-        }
-      }
+    #contact{
+        padding: 8rem 0;
+    }
+    
+    .btn-lg {
+        text-transform: uppercase;
+    }
 
    
 
