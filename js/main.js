@@ -1,3 +1,10 @@
-function myFunction(x) {
-    x.classList.toggle("change");
-  }
+$( document ).ready(function() {
+  console.log( "ready!" );
+
+
+
+
+
+
+
+});
