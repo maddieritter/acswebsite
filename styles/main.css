@@ -372,4 +372,12 @@ template {
 .btn-lg {
   text-transform: uppercase;
 }
+
+#email {
+  display: none;
+}
+
+#phone {
+  display: none;
+}
 /*# sourceMappingURL=main.css.map */
